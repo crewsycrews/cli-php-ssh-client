@@ -1,0 +1,12 @@
+#!/usr/bin/php
+<?php
+
+use App\Commands\SSHConnectCommand;
+use DivineOmega\SSHConnection\SSHConnection;
+
+require_once('vendor/autoload.php');
+
+$climate = new League\CLImate\CLImate;
+$connection = new SSHConnection();
+$command = new SSHConnectCommand($climate, $connection);
+$command->handle();
