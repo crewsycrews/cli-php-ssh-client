@@ -1,4 +1,4 @@
-# SHH CLI PHP client
+# SSH CLI PHP client
 
 Small client for regular tasks. Requires PHP 7.4
 
